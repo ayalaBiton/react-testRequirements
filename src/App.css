@@ -1,0 +1,156 @@
+/* App */
+.app {
+  background-color: rgb(228, 241, 245);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* UsersTable */
+.container {
+  display: flex;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: rgb(205, 235, 245); /* rgb(245, 245, 245) */
+}
+
+.divTable {
+  padding-top: 6.69%;
+  margin-left: 4%;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+
+/* UserPosts */
+.divUserPosts{
+  width: 100%;
+  margin: 3% 4% 0 0;
+}
+
+.btnNewPost{
+  height: 40px;
+  width: 150px;
+  margin-left: 100px;
+}
+
+
+/* NewPost */
+#divNewPost{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#formNewPost{
+  position: absolute;
+  top: 20%; 
+  right: 32%;
+  background-color: white;
+  width: 40vw;
+  height: 50vh;
+  border-radius: 8px;
+  border: 2px solid rgb(43, 126, 154);
+}
+
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+
+#formNewPost p{
+  text-align: center;
+}
+
+#formNewPost input[type=text]{
+  width: 60vh;
+  padding: 15px;
+  margin: 10px 0 15px 75px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+#formNewPost label{
+  margin: 5px 0 22px 75px;
+}
+
+input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+#btnCreate{
+  margin: 0px 0 22px 40%;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 790px) 
+{
+  /* App */
+  .app {
+    font-size: 12px;
+  }
+  
+  
+  /* UsersTable */
+  .container {
+    flex-direction: column;
+  }
+
+  .divTable {
+    padding-top: 4%;
+    margin-bottom: 4%;
+  }
+
+  
+  /* NewPost */
+  #divNewPost{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #formNewPost {
+    top: 10%;
+    right: 10%;
+    width: 80vw;
+    height: 60vh;
+  }
+  
+  #formNewPost input[type=text]{
+    width: 50%;
+    margin: 10px 0 22px 20%;
+  }
+  
+  #btnCreate{
+    margin: 20px 0 22px 35%;
+  }
+}
